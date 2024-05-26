@@ -4,6 +4,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:getx/color.dart';
 import 'package:getx/fotter.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -17,7 +18,7 @@ class header extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 80,
-      color:Colors.blue,
+      color:Praymarycolor,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(

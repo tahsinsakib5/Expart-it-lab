@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:getx/clientSection.dart';
 import 'package:getx/color.dart';
+import 'package:getx/custombutton.dart';
 import 'package:getx/fotter.dart';
 import 'package:getx/header.dart';
 import 'package:getx/question/question.dart';
@@ -21,7 +22,7 @@ class HomePage extends StatelessWidget {
           children: [
             header(),
             Container(
-              color:Prmarycolor,
+              color:Praymarycolor,
               height:600,
               width: MediaQuery.sizeOf(context).width,
             
@@ -91,7 +92,7 @@ class HomePage extends StatelessWidget {
           child: Container()),
         
               Expanded(
-              flex: 3,
+              flex: 4,
                   child: Row(
                     children: [
                       Expanded(child: Image.asset("assets/about.png",height:500,)),
@@ -108,7 +109,12 @@ class HomePage extends StatelessWidget {
                                             Container(
                                               
                                               width: MediaQuery.sizeOf(context).width,
-                                              child: Text("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit laborum iure inventore possimus laboriosam qui nam. Fugit!""",style:TextStyle(fontSize:20),))
+                                              child: Text("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit laborum iure inventore possimus laboriosam qui nam. Fugit!""",style:TextStyle(fontSize:20,color: Colors.grey,height:2),)),
+                                                 
+                                                 SizedBox(
+                                                  height: 20,
+                                                 ),
+                                              Custombutton()
                                           ],
                                         ),
                         ),
@@ -130,7 +136,7 @@ class HomePage extends StatelessWidget {
           child: Container()),
         
               Expanded(
-              flex: 3,
+              flex: 4,
                   child: Row(
                     children: [
                      
@@ -139,16 +145,22 @@ class HomePage extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                           
                                           children: [
-                                            Container(child: Text("We complete every project with extra care as customer need.",style:TextStyle(fontSize:35),)),
+                                            Container(child: Text("We complete every project with extra care as customer need.",style:TextStyle(fontSize:35,color: textcolor,fontWeight:FontWeight.w600),)),
                                             Container(
                                               
                                               width: MediaQuery.sizeOf(context).width,
-                                              child: Text("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque\n in.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae\n facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit laborum iure\n inventore possimus laboriosam qui nam. Fugit!""",style:TextStyle(fontSize:20),))
+                                              child: Text("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit laborum iure inventore possimus laboriosam qui nam. Fugit!""",style:TextStyle(fontSize:20,color: Colors.grey,height:2),)),
+
+                                                 
+                                                 SizedBox(
+                                                  height: 20,
+                                                 ),
+                                              Custombutton()
                                           ],
                                         ),
                         ),
 
-                         Expanded(child: Image.asset("assets/about.png",height:500,)),
+                         Expanded(child: Image.asset("assets/about2.png",height:500,)),
         
                     ],
                   ),
@@ -172,19 +184,26 @@ class HomePage extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
                         decoration: BoxDecoration(
-                          border: Border.all(),
+                          border: Border.all(color: Secondarycolor),
                           borderRadius: BorderRadius.circular(10)
                         ),
                          child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.business_sharp,size:60,),
+                            
+                            Icon(Icons.business_sharp,size:70,color:iconcolor,),
                   
-                            Text("Business Solutions",style: TextStyle(fontSize:20),),
+                            Text("Business Solutions",style: TextStyle(fontSize:27,fontWeight: FontWeight.w600,color: textcolor),),
                             Padding(
-                              padding: const EdgeInsets.all(30),
-                              child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.",textAlign: TextAlign.center,),
-                            )
+                              padding: const EdgeInsets.all(26),
+                              child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.",textAlign: TextAlign.center,style:TextStyle( fontSize:18,color: Colors.grey,height:1.7),),
+                            ),
+
+                            SizedBox(
+                              height: 20,
+                            ),
+
+                         
                           ],
                          ),
                       ),
@@ -205,72 +224,70 @@ class HomePage extends StatelessWidget {
 Expanded(flex:1, child: Container()),
 
                 Expanded(
-                  flex:3,
-                  child: Expanded(
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Container(
-                          
-                            decoration: BoxDecoration(
-                             
-                            ),
-                            child: Image.asset("assets/bg-4.jpg",height: 500,),
+                  flex:4,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                        
+                          decoration: BoxDecoration(
+                           
                           ),
-                        ), 
-
-
-                        SizedBox(
-                          width: 30,
+                          child: Image.asset("assets/bg-4.jpg",height: 500,),
                         ),
-                    
-                        Expanded(
-
-
-                          child: ListView.builder( shrinkWrap:true,itemCount:3,itemBuilder: (context, index) {
-                            return   Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Container(
-                               
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(77, 227, 224, 224),
-                                  borderRadius: BorderRadius.circular(10)
-                                ),
-                                                        
-                                child: Padding(
-                                  padding: const EdgeInsets.all(14.0),
-                                  child: Row(
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      Icon(Icons.business_sharp,size:40,),
-                                      
-                                      SizedBox(
-                                        width: 10,
-                                      ),
-                                      Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          Text("Lots Of Pre-Made Widgets",style: TextStyle(fontSize:22),),
-                                          SizedBox(
-                                            height: 6,
-                                          ),
-                                          Container( child: Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Laudantium modi assumenda."))
-                                        ],
-                                      )
-                                    ],
-                                  ),
+                      ), 
+                  
+                  
+                      SizedBox(
+                        width: 30,
+                      ),
+                  
+                      Expanded(
+                  
+                  
+                        child: ListView.builder( shrinkWrap:true,itemCount:3,itemBuilder: (context, index) {
+                          return   Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Container(
+                             
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(77, 243, 243, 243),
+                                borderRadius: BorderRadius.circular(10)
+                              ),
+                                                      
+                              child: Padding(
+                                padding: const EdgeInsets.all(14.0),
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Icon(Icons.business_sharp,size:60,color: iconcolor,),
+                                    
+                                    SizedBox(
+                                      width: 10,
+                                    ),
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("Lots Of Pre-Made Widgets",style: TextStyle(fontSize:22,color: textcolor,fontWeight: FontWeight.w700),),
+                                        SizedBox(
+                                          height: 6,
+                                        ),
+                                        Container( child: Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit\n Laudantium modi assumenda.",style:TextStyle(color: Colors.grey,fontSize: 19),))
+                                      ],
+                                    )
+                                  ],
                                 ),
                               ),
-                            );
-                          },),
-                          
-                          
-                          
+                            ),
+                          );
+                        },),
                         
-                        )
-                      ],
-                    ),
+                        
+                        
+                      
+                      )
+                    ],
                   ),
                 ),
                 Expanded(flex:1, child: Container()),
@@ -281,74 +298,81 @@ Expanded(flex:1, child: Container()),
              SizedBox(
               height: 30,
              ),
-      
+
+
+
+       
             Row(
               children: [
-Expanded(flex:1, child: Container()),
+               Expanded(flex:1, child: Container()),
 
                 Expanded(
                   flex:7,
-                  child: Expanded(
-                    child: Row(
-                      children: [
-                       
+                  child: Row(
+                    children: [
+                     
+                  
+                      Expanded(
+                  
+                  
+                        child: ListView.builder( shrinkWrap:true,itemCount:3,itemBuilder: (context, index) {
+                          return   Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              
+                              Column(
+                                children: [
+                                  CircleAvatar( radius:42, backgroundColor: Colors.blue, child:  CircleAvatar(radius:40, backgroundColor: Color.fromARGB(255, 240, 237, 237), child:Icon(Icons.business_sharp),)),
+                          
+                                  Container(
+                                    height:90,
+                                    width: 2,
+                                    color: Colors.grey,
+                                  )
+                                ],
+                              ),
+                              
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Text("Lots Of Pre-Made Widgets",style: TextStyle(color: textcolor,fontSize:25,fontWeight: FontWeight.w400),),
+                                  Container( child: Text("Lorem ipsum dolor sit amet,\n consectetur adipisicing elit. Laudantium modi assumenda beatae\n provident non hic eum dolores natus, vitae, quae, facere perferendis\n quas tempore. Consequuntur commodi facilis sed\n similique.ssumenda.",style:TextStyle(color:Colors.grey,fontSize:17),))
+                                ],
+                              )
+                            ],
+                          );
+                        },),
                     
-                        Expanded(
-
-
-                          child: ListView.builder( shrinkWrap:true,itemCount:3,itemBuilder: (context, index) {
-                            return   Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                
-                                Column(
-                                  children: [
-                                    CircleAvatar( radius:42, backgroundColor: Colors.blue, child:  CircleAvatar(radius:40, backgroundColor: Color.fromARGB(255, 240, 237, 237), child:Icon(Icons.business_sharp),)),
-                            
-                                    Container(
-                                      height:80,
-                                      width: 2,
-                                      color: Colors.grey,
-                                    )
-                                  ],
-                                ),
-                                
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text("Lots Of Pre-Made Widgets"),
-                                    Container( child: Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Laudantium modi assumenda."))
-                                  ],
-                                )
-                              ],
-                            );
-                          },),
-                          
-                          
-                          
+                      ),
+                  
+                       Expanded(
+                        child: Container(
                         
-                        ),
-
-                         Expanded(
-                          child: Container(
-                          
-                            decoration: BoxDecoration(
-                             
-                            ),
-                            child: Image.asset("assets/phone.png",height: 500,),
+                          decoration: BoxDecoration(
+                           
                           ),
+                          child: Image.asset("assets/phone.png",height: 500,),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
                 Expanded(flex:1, child: Container()),
               ],
             ),
+
+
+           SizedBox(
+            height: 30,
+           ),
+
 
               Row(
                 children: [
@@ -358,73 +382,76 @@ Expanded(flex:1, child: Container()),
                     child: Container(
                       height: 200,
                       decoration: BoxDecoration(
-                        
+                        borderRadius: BorderRadius.circular(20),
                      color: Colors.blue
                       
                       ),
-                      child: Column(
-                        children: [
-                          Text("Don’t Miss Our News And Updates!",style: TextStyle(fontSize:30),),
-
-                          Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit\nSed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo."),
-
-                          TextField(decoration: InputDecoration(suffix:Icon(Icons.send)),),
-
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Row(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Text("joun us"),
-
-                                      MaterialButton(onPressed: () {
-                                        
-                                      },child: Container(
-                                        height: 40,
-                                        width: 100,
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          children: [
+                            Text("Don’t Miss Our News And Updates!",style: TextStyle(fontSize:30),),
+                        
+                            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit\nSed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo."),
+                        
+                            TextField(decoration: InputDecoration(suffix:Icon(Icons.send)),),
+                        
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Row(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Text("joun us"),
+                        
+                                        MaterialButton(onPressed: () {
                                           
-                                        ),
-
-                                        child: Row(
-                                          children: [
-                                            Icon(MdiIcons.linkedin),
-                                            Text("Linkdin"),
-                                          ],
-                                        ),
-                                      ),),
-
-                                        Row(
-                      children: [
-                      
-                        Icon(
-                          MdiIcons.twitter,
-                          color: Colors.white,
-                        ),
-                        Icon(
-                          MdiIcons.facebook,
-                          color: Colors.white,
-                        ),
-                        Icon(
-                          MdiIcons.youtube,
-                          color: Colors.white,
-                        ),
-                        Icon(
-                          MdiIcons.instagram,
-                          color: Colors.white,
-                        ),
-                      ],
-                    )
-                                    ],
-                                  )
-                                ],
-                              )
-                            ],
-                          )
+                                        },child: Container(
+                                          height: 40,
+                                          width: 100,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            
+                                          ),
+                        
+                                          child: Row(
+                                            children: [
+                                              Icon(MdiIcons.linkedin),
+                                              Text("Linkdin"),
+                                            ],
+                                          ),
+                                        ),),
+                        
+                                          Row(
+                        children: [
+                        
+                          Icon(
+                            MdiIcons.twitter,
+                            color: Colors.white,
+                          ),
+                          Icon(
+                            MdiIcons.facebook,
+                            color: Colors.white,
+                          ),
+                          Icon(
+                            MdiIcons.youtube,
+                            color: Colors.white,
+                          ),
+                          Icon(
+                            MdiIcons.instagram,
+                            color: Colors.white,
+                          ),
                         ],
+                                            )
+                                      ],
+                                    )
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -647,28 +674,26 @@ Expanded(flex:1, child: Container()),
 
                 Expanded(
                   flex:7,
-                  child: Expanded(
-                    child: Row(
-                      children: [
-                       
-                    
-                        Expanded(
-
-                             
-                         child: question(),
-                          ),
-                          
-                         Expanded(
-                          child: Container(
-                          
-                            decoration: BoxDecoration(
-                             
-                            ),
-                            child: Image.asset("assets/banner.png",height: 500,),
-                          ),
+                  child: Row(
+                    children: [
+                     
+                  
+                      Expanded(
+                  
+                           
+                       child: question(),
                         ),
-                      ],
-                    ),
+                        
+                       Expanded(
+                        child: Container(
+                        
+                          decoration: BoxDecoration(
+                           
+                          ),
+                          child: Image.asset("assets/banner.png",height: 500,),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
                 Expanded(flex:1, child: Container()),
@@ -683,9 +708,6 @@ Expanded(flex:1, child: Container()),
     );
   }
 }
-
-
-
 
 
 

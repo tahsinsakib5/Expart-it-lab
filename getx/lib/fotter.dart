@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:getx/color.dart';
 
 
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -41,7 +42,7 @@ class _fotterState extends State<fotter> {
   }
     return Container(
       height: 500,
-      color:Colors.black,
+      color:fottercolor,
       child: Column(
       
         children: [

@@ -24,7 +24,7 @@ class _questionState extends State<question> {
            
          });
        },child:Container(
-         width: double.infinity,
+        width: MediaQuery.of(context).size.width * 0.7,
     
          decoration: BoxDecoration(
            gradient: LinearGradient(colors:[Colors.blue,Color.fromARGB(255, 23, 248, 30)])
