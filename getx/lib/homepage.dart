@@ -51,7 +51,42 @@ class HomePage extends StatelessWidget {
                                             Container(
                                               
                                               width: MediaQuery.sizeOf(context).width,
-                                              child: Text("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.""",style: TextStyle(fontSize:20,color: Colors.white),))
+                                              child: Text("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.""",style: TextStyle(fontSize:20,color: Colors.white),)),
+
+                                          SizedBox(
+                                            height: 60,
+                                          ),
+                                              Row(
+                                                children: [
+                                                  MaterialButton(onPressed: () {
+                                                    
+                                                  },child:Container(
+                                                    height:55,
+                                                    width:130,
+                                                    decoration: BoxDecoration(
+                                                      borderRadius: BorderRadius.circular(100),
+                                                      color: Secondarycolor,
+
+                                                    ),
+
+                                                    child: Center(child: Text("Contact us",style: TextStyle(color: Colors.white),)),
+                                                  ),),
+
+                                                   MaterialButton(onPressed: () {
+                                                    
+                                                  },child:Container(
+                                                    height:55,
+                                                    width:130,
+                                                    decoration: BoxDecoration(
+                                                      borderRadius: BorderRadius.circular(100),
+                                                      color: Secondarycolor,
+
+                                                    ),
+
+                                                    child: Center(child: Text("Contact us",style: TextStyle(color: Colors.white),)),
+                                                  ),)
+                                                ],
+                                              )
                                           ],
                                         ),
                         ),
@@ -108,7 +143,7 @@ class HomePage extends StatelessWidget {
                                             ),
                                             Container(
                                               
-                                              width: MediaQuery.sizeOf(context).width,
+                                             
                                               child: Text("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit laborum iure inventore possimus laboriosam qui nam. Fugit!""",style:TextStyle(fontSize:20,color: Colors.grey,height:2),)),
                                                  
                                                  SizedBox(
@@ -171,8 +206,33 @@ class HomePage extends StatelessWidget {
               
               Expanded(child: Container())
             ],),
+                 
 
+                 SizedBox(
+                  height: 80,
+                 ),
+              
+              Column(
+                children: [
+                  
+                  
+                   Indicator(),
+                    SizedBox(
+                  height:30,
+                 ),
 
+                  Text("FOur Core Services",style:TextStyle(fontSize:45,color:textcolor,fontWeight: FontWeight.w600),),
+
+                  SizedBox(
+                  height:30,
+                 ),
+                  
+                  Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit\n Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.",textAlign:TextAlign.center,style:TextStyle(color: Colors.grey,height:1.7,fontSize:22),)],
+              ),
+
+               SizedBox(
+                  height: 80,
+                 ),
 
             Row(
               children: [
@@ -215,10 +275,29 @@ class HomePage extends StatelessWidget {
             ),
 
 
-
+                     SizedBox(
+                  height: 80,
+                 ),
             
+              Column(
+                children: [
+                  
+                  
+                   Indicator(),
+                      SizedBox(
+                  height: 20,
+                 ),
 
+                  Text("Watch Our Demo Videos",style:TextStyle(fontSize:45,color:textcolor,fontWeight: FontWeight.w600),),
+                   SizedBox(
+                  height:20,
+                 ),
+                  Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit\n Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.",textAlign:TextAlign.center,style:TextStyle(color: Colors.grey,height:1.7,fontSize:22),)],
+              ),
 
+                 SizedBox(
+                  height: 80,
+                 ),
             Row(
               children: [
 Expanded(flex:1, child: Container()),
@@ -265,16 +344,20 @@ Expanded(flex:1, child: Container()),
                                     SizedBox(
                                       width: 10,
                                     ),
-                                    Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text("Lots Of Pre-Made Widgets",style: TextStyle(fontSize:22,color: textcolor,fontWeight: FontWeight.w700),),
-                                        SizedBox(
-                                          height: 6,
-                                        ),
-                                        Container( child: Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit\n Laudantium modi assumenda.",style:TextStyle(color: Colors.grey,fontSize: 19),))
-                                      ],
+                                    Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text("Lots Of Pre-Made Widgets",style: TextStyle(fontSize:22,color: textcolor,fontWeight: FontWeight.w700),),
+                                       
+                                            
+                                              Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit Laudantium modi assumenda.",style:TextStyle(color: Colors.grey,fontSize: 19),),
+                                          SizedBox(
+                                            height: 6,
+                                          )
+                                        ],
+                                      ),
                                     )
                                   ],
                                 ),
@@ -299,8 +382,30 @@ Expanded(flex:1, child: Container()),
               height: 30,
              ),
 
+                 SizedBox(
+                  height: 80,
+                 ),
+            
+              Column(
+                children: [
+                  
+                   SizedBox(
+                  height:20,
+                 ),
+                   Indicator(),
+                     SizedBox(
+                  height: 20,
+                 ),
+
+                  Text("Our Mobile Applicatio",style:TextStyle(fontSize:45,color:textcolor,fontWeight: FontWeight.w600),),
+                  
+                  Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit\n Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.",textAlign:TextAlign.center,style:TextStyle(color: Colors.grey,height:1.7,fontSize:22),)],
+              ),
 
 
+               SizedBox(
+                  height: 80,
+                 ),
        
             Row(
               children: [
@@ -335,16 +440,18 @@ Expanded(flex:1, child: Container()),
                               SizedBox(
                                 width: 10,
                               ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  SizedBox(
-                                    height: 20,
-                                  ),
-                                  Text("Lots Of Pre-Made Widgets",style: TextStyle(color: textcolor,fontSize:25,fontWeight: FontWeight.w400),),
-                                  Container( child: Text("Lorem ipsum dolor sit amet,\n consectetur adipisicing elit. Laudantium modi assumenda beatae\n provident non hic eum dolores natus, vitae, quae, facere perferendis\n quas tempore. Consequuntur commodi facilis sed\n similique.ssumenda.",style:TextStyle(color:Colors.grey,fontSize:17),))
-                                ],
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                    Text("Lots Of Pre-Made Widgets",style: TextStyle(color: textcolor,fontSize:25,fontWeight: FontWeight.w400),),
+                                    Container( child: Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi assumenda beatae provident non hic eum dolores natus, vitae, quae, facere perferendis quas tempore. Consequuntur commodi facilis sed similique.ssumenda.",style:TextStyle(color:Colors.grey,fontSize:17),))
+                                  ],
+                                ),
                               )
                             ],
                           );
@@ -380,7 +487,7 @@ Expanded(flex:1, child: Container()),
                   Expanded(
                     flex: 5,
                     child: Container(
-                      height: 200,
+                     
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                      color: Colors.blue
@@ -411,6 +518,7 @@ Expanded(flex:1, child: Container()),
                                           height: 40,
                                           width: 100,
                                           decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(100),
                                             color: Colors.white,
                                             
                                           ),
@@ -458,9 +566,21 @@ Expanded(flex:1, child: Container()),
                   Expanded(flex:1, child: Container()),
                 ],
               ),
+               
+               SizedBox(height:80,),
+                     
+              Column(
+                children: [
+                  
+                  SizedBox(height:20,),
+                   Indicator(),
+                 SizedBox(height:20,),
 
-
-                SizedBox(height:60,),
+                  Text("Awesome Team",style:TextStyle(fontSize:45,color:textcolor,fontWeight: FontWeight.w600),),
+                  SizedBox(height:30,),
+                  Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit\n Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.",textAlign:TextAlign.center,style:TextStyle(color: Colors.grey,height:1.7,fontSize:22),)],
+              ),
+                SizedBox(height:80,),
 
                 Row(
                 children: [
@@ -509,8 +629,8 @@ Expanded(flex:1, child: Container()),
                                child: Column(
                                  children: [
                                    Image.asset("assets/2.png",height:200,),
-                                    Text("sakib"),
-                                    Text("EXECUTIVE OFFICER")
+                                    Text("tahsin sakib",style: TextStyle(color: textcolor,fontSize:22,fontWeight: FontWeight.w600),),
+                                    Text("EXECUTIVE OFFICER",style:TextStyle(color: Colors.grey,),)
                                  ],
                                ),
                              ),
@@ -552,8 +672,8 @@ Expanded(flex:1, child: Container()),
                                child: Column(
                                  children: [
                                    Image.asset("assets/2.png",height:200,),
-                                    Text("sakib"),
-                                    Text("EXECUTIVE OFFICER")
+                                    Text("tahsin sakib",style: TextStyle(color: textcolor,fontSize:22,fontWeight: FontWeight.w600),),
+                                    Text("EXECUTIVE OFFICER",style:TextStyle(color: Colors.grey,),)
                                  ],
                                ),
                              ),
@@ -594,8 +714,8 @@ Expanded(flex:1, child: Container()),
                                child: Column(
                                  children: [
                                    Image.asset("assets/2.png",height:200,),
-                                    Text("sakib"),
-                                    Text("EXECUTIVE OFFICER")
+                                    Text("tahsin sakib",style: TextStyle(color: textcolor,fontSize:22,fontWeight: FontWeight.w600),),
+                                    Text("EXECUTIVE OFFICER",style:TextStyle(color: Colors.grey,),)
                                  ],
                                ),
                              ),
@@ -636,8 +756,8 @@ Expanded(flex:1, child: Container()),
                                child: Column(
                                  children: [
                                    Image.asset("assets/2.png",height:200,),
-                                    Text("sakib"),
-                                    Text("EXECUTIVE OFFICER")
+                                   Text("tahsin sakib",style: TextStyle(color: textcolor,fontSize:22,fontWeight: FontWeight.w600),),
+                                    Text("EXECUTIVE OFFICER",style:TextStyle(color: Colors.grey,),)
                                  ],
                                ),
                              ),
@@ -658,16 +778,20 @@ Expanded(flex:1, child: Container()),
                 height: 50,
               ),
 
-
+              SizedBox(height:80,),
               Column(
                 children: [
                   
-                  
+                 
                    Indicator(),
-                  Text("Frequently Asked Questions",style:TextStyle(fontSize: 30),),Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.")],
+
+                 SizedBox(height:30,),
+                  Text("Frequently Asked Questions",style:TextStyle(fontSize:45,color:textcolor,fontWeight: FontWeight.w600),),
+                  SizedBox(height:30,),
+                  Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit\n Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.",textAlign:TextAlign.center,style:TextStyle(color: Colors.grey,height:1.7,fontSize:22),)],
               ),
 
-              
+              SizedBox(height:80,),
             Row(
               children: [
 Expanded(flex:1, child: Container()),
@@ -720,7 +844,7 @@ class Indicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         CircleAvatar(radius:6,backgroundColor:Colors.blue,),
          Padding(

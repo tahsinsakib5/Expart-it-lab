@@ -32,7 +32,7 @@ class header extends StatelessWidget {
                   //   "assets/logo.png",
                   //   height: 60,
                   // ),
-                  Text("Expart It lab",style:TextStyle(fontSize:30,fontWeight: FontWeight.w700),)
+                  Text("Expart It lab",style:TextStyle(fontSize:30,fontWeight: FontWeight.w700,color: Colors.white),)
                 ],
               ),
             ),
@@ -44,13 +44,13 @@ class header extends StatelessWidget {
                 
                 TextButton(onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => fotter(),));
-                }, child: Text("Home",style:TextStyle(fontSize:21,fontWeight: FontWeight.w700),),),
+                }, child: Text("Home",style:TextStyle(fontSize:21,fontWeight: FontWeight.w500,color: Colors.white),),),
         
                   
-                  Text("Aboute",style:TextStyle(fontSize:21,fontWeight: FontWeight.w700),),
-                  Text("Pages",style:TextStyle(fontSize:21,fontWeight: FontWeight.w700),),
-                  Text("Pages",style:TextStyle(fontSize:21,fontWeight: FontWeight.w700),),
-                  Text("Pages",style:TextStyle(fontSize:21,fontWeight: FontWeight.w700),),
+                  Text("Aboute",style:TextStyle(fontSize:21,fontWeight: FontWeight.w500,color: Colors.white),),
+                  Text("Pages",style:TextStyle(fontSize:21,fontWeight: FontWeight.w500,color: Colors.white),),
+                  Text("Pages",style:TextStyle(fontSize:21,fontWeight: FontWeight.w500,color: Colors.white),),
+                  Text("Pages",style:TextStyle(fontSize:21,fontWeight: FontWeight.w500,color: Colors.white),),
 
  MaterialButton(onPressed: () {
                     
