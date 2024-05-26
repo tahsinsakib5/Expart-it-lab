@@ -2,6 +2,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:getx/clientSection.dart';
+import 'package:getx/color.dart';
 import 'package:getx/fotter.dart';
 import 'package:getx/header.dart';
 import 'package:getx/question/question.dart';
@@ -19,7 +21,7 @@ class HomePage extends StatelessWidget {
           children: [
             header(),
             Container(
-              color: Colors.blue,
+              color:Prmarycolor,
               height:600,
               width: MediaQuery.sizeOf(context).width,
             
@@ -71,107 +73,13 @@ class HomePage extends StatelessWidget {
               Expanded(child: Container())
             ],),
             ),
-             SizedBox(height: 20,),
-                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                   children: [
-                
-        
-        
-                     Container(
-                                 height: 150,
-                                 width: 200,
-                                 decoration: BoxDecoration(
-                                   borderRadius:BorderRadius.only(bottomLeft:Radius.circular(10),bottomRight:Radius.circular(10)),
-                                   border: Border( right: BorderSide(color: Colors.black,width: 0.3,),left: BorderSide(color: Colors.black,width: 0.3),top:  BorderSide(color: Colors.black,width: 0.3),bottom: BorderSide(color: Colors.black,width: 3))
-                                 ),
-        
-                                 child: Stack(
-                                   children: [
-                                     Center(child: Icon(Icons.person,size: 130,color:Colors.black.withOpacity(0.1),)),
-
-                                     Positioned(
-                                      top: 30,
-                                      left: 30,
-                                      right:30,
-                                      bottom: 0,
-                                       child: Column(
-                                         children: [
-                                           Text("3032+",style: TextStyle(fontSize: 30),),
-                                           Text("Happy client")
-                                         ],
-                                       ),
-                                     ),
-                                   ],
-                                 ),
-                           ),
-        
-        
-                           SizedBox(
-                            width: 20,
-                           ),
-                             Container(
-                                 height: 150,
-                                 width: 200,
-                                 decoration: BoxDecoration(
-                                   borderRadius:BorderRadius.only(bottomLeft:Radius.circular(10),bottomRight:Radius.circular(10)),
-                                   border: Border( right: BorderSide(color: Colors.black,width: 0.3,),left: BorderSide(color: Colors.black,width: 0.3),top:  BorderSide(color: Colors.black,width: 0.3),bottom: BorderSide(color: Colors.black,width: 3))
-                                 ),
-        
-                                 child: Stack(
-                                   children: [
-                                     Center(child: Icon(Icons.person,size: 130,color:Colors.black.withOpacity(0.1),)),
-
-                                     Positioned(
-                                      top: 30,
-                                      left: 30,
-                                      right:30,
-                                      bottom: 0,
-                                       child: Column(
-                                         children: [
-                                           Text("3032+",style: TextStyle(fontSize: 30),),
-                                           Text("Happy client")
-                                         ],
-                                       ),
-                                     ),
-                                   ],
-                                 ),
-                           ),
-        
-        
-                           SizedBox(
-                            width: 20,
-                           ),
-                             Container(
-                                 height: 150,
-                                 width: 200,
-                                 decoration: BoxDecoration(
-                                   borderRadius:BorderRadius.only(bottomLeft:Radius.circular(10),bottomRight:Radius.circular(10)),
-                                   border: Border( right: BorderSide(color: Colors.black,width: 0.3,),left: BorderSide(color: Colors.black,width: 0.3),top:  BorderSide(color: Colors.black,width: 0.3),bottom: BorderSide(color: Colors.black,width: 3))
-                                 ),
-        
-                                 child: Stack(
-                                   children: [
-                                     Center(child: Icon(Icons.person,size: 130,color:Colors.black.withOpacity(0.1),)),
-
-                                     Positioned(
-                                      top: 30,
-                                      left: 30,
-                                      right:30,
-                                      bottom: 0,
-                                       child: Column(
-                                         children: [
-                                           Text("3032+",style: TextStyle(fontSize: 30),),
-                                           Text("Happy client")
-                                         ],
-                                       ),
-                                     ),
-                                   ],
-                                 ),
-                           ),
-        
-                   ],
-                 ),
+             SizedBox(height: 20,)
+             
+             
+             
+             ,
+                 cientSection(),
+                 
           SizedBox(height:20,),
         
             
@@ -192,7 +100,7 @@ class HomePage extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                           
                                           children: [
-                                            Container(child: Text("We complete every project with extra care as customer need.",style:TextStyle(fontSize:35,fontWeight: FontWeight.w500),)),
+                                            Container(child: Text("We complete every project with extra care as customer need.",style:TextStyle(fontSize:36,fontWeight: FontWeight.w500,color: textcolor),)),
 
                                             SizedBox(
                                               height: 30,
