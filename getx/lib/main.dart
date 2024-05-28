@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getx/homepage.dart';
+import 'package:getx/statechange.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ void main() {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: statechagepage(),
     );
   }
 }
