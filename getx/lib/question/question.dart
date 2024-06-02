@@ -29,17 +29,17 @@ class _questionState extends State<question> {
       
            decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(50),
-             gradient: LinearGradient(colors:[Colors.blue,Color.fromARGB(255, 23, 248, 30)])
+             gradient: const LinearGradient(colors:[Colors.blue,Color.fromARGB(255, 23, 248, 30)])
            ),
       
-           child: Padding(
-             padding: const EdgeInsets.all(14.0),
+           child: const Padding(
+             padding: EdgeInsets.all(14.0),
              child: Text("What are the objectives of this startup?",style:TextStyle(fontSize:20,color: Colors.white),),
            ),
          ),),
       
-         questi==true ? Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore omnis quaerat nostrum, pariatur ipsam sunt accusamus enim necessitatibus est fugiat, assumenda dolorem, deleniti corrupti cupiditate ipsum, dolorum voluptatum esse error?", style: TextStyle(fontSize: 23),):
-         SizedBox(
+         questi==true ? const Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore omnis quaerat nostrum, pariatur ipsam sunt accusamus enim necessitatibus est fugiat, assumenda dolorem, deleniti corrupti cupiditate ipsum, dolorum voluptatum esse error?", style: TextStyle(fontSize: 23),):
+         const SizedBox(
            height: 25,
          ),
           MaterialButton(onPressed: () {
@@ -49,15 +49,15 @@ class _questionState extends State<question> {
           
            decoration: BoxDecoration(
              borderRadius: BorderRadius.circular(50),
-             gradient: LinearGradient(colors:[Colors.blue,Color.fromARGB(255, 23, 248, 30)])
+             gradient: const LinearGradient(colors:[Colors.blue,Color.fromARGB(255, 23, 248, 30)])
            ),
       
-           child: Padding(
-             padding: const EdgeInsets.all(14.0),
+           child: const Padding(
+             padding: EdgeInsets.all(14.0),
              child: Text("What are the objectives of this startup?",style:TextStyle(fontSize:20,color: Colors.white),),
            ),
          ),),
-          SizedBox(
+          const SizedBox(
            height: 25,
          ),
           MaterialButton(onPressed: () {
@@ -67,17 +67,17 @@ class _questionState extends State<question> {
       
            decoration: BoxDecoration(
              borderRadius: BorderRadius.circular(50),
-             gradient: LinearGradient(colors:[Colors.blue,Color.fromARGB(255, 23, 248, 30)])
+             gradient: const LinearGradient(colors:[Colors.blue,Color.fromARGB(255, 23, 248, 30)])
            ),
       
-           child: Padding(
-             padding: const EdgeInsets.all(14.0),
+           child: const Padding(
+             padding: EdgeInsets.all(14.0),
              child: Text("What are the objectives of this startup?",style:TextStyle(fontSize:20,color: Colors.white),),
            ),
          ),),
       
       
-          SizedBox(
+          const SizedBox(
            height: 25,
          ),
           MaterialButton(onPressed: () {
@@ -87,17 +87,17 @@ class _questionState extends State<question> {
       
            decoration: BoxDecoration(
              borderRadius: BorderRadius.circular(50),
-             gradient: LinearGradient(colors:[Colors.blue,Color.fromARGB(255, 23, 248, 30)])
+             gradient: const LinearGradient(colors:[Colors.blue,Color.fromARGB(255, 23, 248, 30)])
            ),
       
-           child: Padding(
-             padding: const EdgeInsets.all(14.0),
+           child: const Padding(
+             padding: EdgeInsets.all(14.0),
              child: Text("What are the objectives of this startup?",style:TextStyle(fontSize:20,color: Colors.white),),
            ),
          ),),
       
       
-          SizedBox(
+          const SizedBox(
            height: 25,
          ),
           MaterialButton(onPressed: () {
@@ -107,11 +107,11 @@ class _questionState extends State<question> {
       
            decoration: BoxDecoration(
              borderRadius: BorderRadius.circular(50),
-             gradient: LinearGradient(colors:[Colors.blue,Color.fromARGB(255, 23, 248, 30)])
+             gradient: const LinearGradient(colors:[Colors.blue,Color.fromARGB(255, 23, 248, 30)])
            ),
       
-           child: Padding(
-             padding: const EdgeInsets.all(14.0),
+           child: const Padding(
+             padding: EdgeInsets.all(14.0),
              child: Text("What are the objectives of this startup?",style:TextStyle(fontSize:20,color: Colors.white),),
            ),
          ),)

@@ -110,7 +110,7 @@ class ourteam extends StatelessWidget {
                      child: Column(
                        children: [
                          Image.asset("assets/2.png",height:200,),
-                          Text("tahsin sakib",style: TextStyle(color: textcolor,fontSize:22,fontWeight: FontWeight.w600),),
+                          Text("tahsin sakib",style: TextStyle(color: textcolor,fontSize:22,fontWeight: FontWeight.w600),),                                                  
                           Text("EXECUTIVE OFFICER",style:TextStyle(color: Colors.grey,),)
                        ],
                      ),

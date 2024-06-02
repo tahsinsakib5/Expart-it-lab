@@ -5,12 +5,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:getx/about/Abouthomepage.dart';
+import 'package:getx/calcalator/card.dart';
 import 'package:getx/color.dart';
-import 'package:getx/fotter.dart';
 import 'package:getx/homepage.dart';
 import 'package:getx/question/faqhomepage.dart';
 import 'package:getx/service/servicehomepage.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+
 
 
 class header extends StatelessWidget {
@@ -55,11 +55,15 @@ class header extends StatelessWidget {
                 }, child: Text("About",style:TextStyle(fontSize:21,fontWeight: FontWeight.w500,color: Colors.white),),),
                    TextButton(onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => ServiceHomePage(),));
-                }, child: Text("Service",style:TextStyle(fontSize:21,fontWeight: FontWeight.w500,color: Colors.white),),),
+                }, child: const Text("Service",style:TextStyle(fontSize:21,fontWeight: FontWeight.w500,color: Colors.white),),),
+
+
                  TextButton(onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => faqhomePage(),));
                 }, child: Text("FAQ",style:TextStyle(fontSize:21,fontWeight: FontWeight.w500,color: Colors.white),),),
-                  Text("Pages",style:TextStyle(fontSize:21,fontWeight: FontWeight.w500,color: Colors.white),),
+                    TextButton(onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) =>calcalatormainpage(),));
+                }, child: Text("App price",style:TextStyle(fontSize:21,fontWeight: FontWeight.w500,color: Colors.white),),),
                   Text("Pages",style:TextStyle(fontSize:21,fontWeight: FontWeight.w500,color: Colors.white),),
 
  MaterialButton(onPressed: () {

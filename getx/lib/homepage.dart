@@ -11,10 +11,8 @@ import 'package:getx/fotter.dart';
 import 'package:getx/header.dart';
 import 'package:getx/mobileaplicationsection/mobilesection.dart';
 import 'package:getx/ourteamSection/ourteam.dart';
-import 'package:getx/question/question.dart';
 import 'package:getx/question/questionsection.dart';
 import 'package:getx/service/Service.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class HomePage extends StatelessWidget {
@@ -288,6 +286,43 @@ class HomePage extends StatelessWidget {
                //here about frequently asking question
             QuestionSection(),
              //fotter under this line
+
+
+                Row(
+                  children: [
+                    Expanded(
+                      child: Container()),
+                      Expanded(
+                        flex: 3,
+                        child: Column(
+                          children: [
+                             Row(
+                            children: [
+                             InkWell(
+                              onTap: () {
+                                
+                              },
+                               child: Container(
+                                height: 200,
+                                width: 200,
+                                color: Colors.amber,
+                               ),
+                             ),
+                              Container(
+                              height: 200,
+                              width: 200,
+                              color: Colors.amber,
+                             )
+                            ],
+                             )
+                          ],
+                        ),
+                      ),
+                    Expanded(child: Container()),
+                    
+                  ],
+                ),
+
               fotter()
           ],
         ),
@@ -295,6 +330,8 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+
 
 
 
